@@ -1,0 +1,17 @@
+@mixin small{
+    @media all and (min-width:$small-size-min) and (max-width:$small-size-max){
+        @content
+    }
+}
+
+@mixin med{
+    @media all and (min-width:$med-size-min) and (max-width:$med-size-max){
+        @content
+    }
+}
+
+@mixin large{
+    @media all and (min-width:$large-size-min){
+        @content
+    }
+}
